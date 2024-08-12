@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store locator </title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search-section">
+                <h1>FIND A RESTURANT NEAR BY</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Search" id="search">
+                    <input type="text" placeholder="City" id="city">
+                </div>
+                <div class="filter-options">
+                    <button id="all">All</button>
+                    <button id="delivery">Delivery</button>
+                    <button id="pickup">Pickup</button>
+                </div>
+            </div>
+            <div class="result-section">
+                <div class="location">
+                    <h2>CHEEZIOUS</h2>
+                    <p>Lahore</p>
+                    <p>05:00 AM - 12:00 AM</p>
+                </div>
+                <div class="location">
+                    <h2>PIZZA ONLINE</h2>
+                    <p>36, D.H.A Phase 6, Karachi City, Sindh 75500, Pakistan</p>
+                    <p>12:00 PM - 03:00 AM</p>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="p1.js"></script>
+</body>
+</html>

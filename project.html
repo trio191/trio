@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="WhatsApp Image 2024-06-09 at 8.58.56 PM.jpeg.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINE BOOK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <nav class="nav">
+                <a href="#"><img src="WhatsApp Image 2024-06-10 at 12.35.40 PM.jpeg.jpg" alt="Logo" class="logo"></a>
+                <div class="nav-center">
+                    <a href="project.html">Home</a>
+                    <div class="dropdown">
+                        <a href="#">Shop</a>
+                        <div class="dropdown-content">
+                            <a href="#">New Arrivals</a>
+                            <a href="#">Best Sellers</a>
+                            <a href="#">Special Offers</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Menu</a>
+                        <div class="dropdown-content">
+                            <a href="#">Breakfast</a>
+                            <a href="#">Lunch</a>
+                            <a href="#">Dinner</a>
+                            <a href="#">Desserts</a>
+                        </div>
+                    </div>
+                    <a href="pg8.html">Beverages</a>
+                    <a href="pg6.html">Contact & FAQ</a>
+                    <a href="pg7.html">Blog Bites</a>
+                </div>
+                <div class="hamburger" onclick="toggleSideMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="side-menu" id="sideMenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSideMenu()">&times;</a>
+        <a href="javascript:void(0)" onclick="openForm('signup')">Signup</a>
+        <a href="javascript:void(0)" onclick="openForm('login')">Login</a>
+        <a href="javascript:void(0)" onclick="openForm('rating')">Ratings</a>
+    </div>
+
+    <div class="form-popup" id="signupForm">
+        <form class="form-container">
+            <h2>Signup</h2>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit" class="btn">Signup</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="loginForm">
+        <form class="form-container">
+            <h2>Login</h2>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="ratingForm">
+        <div class="form-container">
+            <h2>Ratings</h2>
+            <div class="rating">
+                <span class="star" onclick="rate(5)">&#9733;</span>
+                <span class="star" onclick="rate(4)">&#9733;</span>
+                <span class="star" onclick="rate(3)">&#9733;</span>
+                <span class="star" onclick="rate(2)">&#9733;</span>
+                <span class="star" onclick="rate(1)">&#9733;</span>
+            </div>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/yourwhatsapplink" class="whatsapp-icon" target="_blank">
+        <img src="project pictures/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <div class="hero-section">
+        <img src="project pictures/192635864-beautiful-table-setting-for-wedding-with-menu-on-black-background.jpg">
+        <div class="hero-text">
+            <h1>Experience The Art Of Dining</h1>
+            <button class="btn hero-btn">Book a Table</button>
+        </div>
+    </div>
+
+    <section class="welcome-section">
+        <h2>Welcome to Dine Book</h2>
+        <img src="project pictures/360_F_294263329_1IgvqNgDbhmQNgDxkhlW433uOFuIDar4.jpg" alt="Welcome Image" class="welcome-image">
+        <p>Where Flavors Meets The Passion</p>
+        <p>Experience the essence of love, joy and happiness all over the world</p>
+    </section>
+
+    <div class="container">
+        <div class="section centered">
+            <img src="project pictures/restaurant-website-top-serps.jpg" alt="Discover the Taste of Tradition" class="section-image">
+            <div class="section-text">
+                <h2>Discover the Taste of Tradition</h2>
+                <p>"Refine your search, refine your results! Our filters allow you to narrow down your options and find exactly what you're looking for. Whether you're filtering by price, category, or rating, our intuitive filters make it easy to find the perfect option. Start filtering now and discover the perfect result!"</p>
+               <a href="p1.html"><button class="btn">SEARCH AND FILTERS</button></a> 
+            </div>
+        </div>
+
+        <div class="section centered reverse">
+            <img src="project pictures/top-view-delicious-food-with-copy-space_23-2150857936.avif" alt="Gourmet Delights" class="section-image">
+            <div class="section-text">
+                <h2>Satisfy Your Cravings</h2>
+                <p>"Ready to satisfy your cravings? Place your order now and get ready for a culinary experience like no other. Our team is dedicated to preparing your meal with care and attention to detail, ensuring every bite is a delight. Order with ease and get ready to enjoy!"</p>
+                <a href="p3.html"><button class="btn">BROWSE MENU</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section centered">
+            <img src="project pictures/reserve.webp" alt="Reserve Your Spot" class="section-image">
+            <div class="section-text">
+                <h2>Reserve Your Spot</h2>
+                <p>"Don't miss out on the chance to create unforgettable memories! Book your table now and let us take care of the rest. We promise an evening of delight and indulgence."</p>
+               <a href="p4.html"><button class="btn">BOOKING AND RESERVATIONS</button></a> 
+            </div>
+        </div>
+
+        <div class="section centered reverse">
+            <img src="project pictures/images.jpeg" alt="Dine, Pay and Ride" class="section-image">
+            <div class="section-text">
+                <h2>Dine, Pay and Ride</h2>
+                <p>"Enjoy a seamless experience with our secure payment options and reliable ride services - pay with ease and ride with peace of mind!"</p>
+               <a href="p5.html"><button class="btn">PAY AND RIDE</button></a> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section centered">
+            <img src="project pictures/Order-tracking-.png" alt="Take Away" class="section-image">
+            <div class="section-text">
+                <h2>Take Away</h2>
+                <p>"Stay connected to your order every step of the way! Track your order in real-time and get updates on preparation, dispatch, and delivery. Because waiting shouldn't mean wondering..."</p>
+               <a href="p2.html"><button class="btn">TRACK IT</button></a> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title">DINE BOOK  <br> "EVERY MEAL MATTERS"</h1>
+
+        <button class="collapsible">Order Now, Enjoy Later!<span class="arrow right"></span></button>
+        <div class="content">
+            <p>Get food delivered right to your doorstep and enjoy your favorite meals whenever you want!</p>
+        </div>
+
+        <button class="collapsible">Reserve Your Table<span class="arrow right"></span></button>
+        <div class="content">
+            <p> Book your table in advance and ensure a hassle-free dining experience at your favorite restaurant</p>
+        </div>
+
+        <button class="collapsible">Menu at Your Fingertips<span class="arrow right"></span></button>
+        <div class="content">
+            <p>  Browse our extensive menu selection and choose your favorite dishes with just a few clicks!</p>
+        </div>
+
+        <button class="collapsible">Ride with Us, Dine with Joy<span class="arrow right"></span></button>
+        <div class="content">
+            <p>Let us take care of your transportation needs, so you can focus on enjoying your meal!</p>
+        </div>
+
+        <button class="collapsible">Food, Ride, Fun - All in One!<span class="arrow right"></span></button>
+        <div class="content">
+            <p>Experience the ultimate convenience with Dine Book - food delivery, reservations, and ride booking all in one place!</p>
+        </div>
+
+        <button class="collapsible"> Book, Eat, Repeat<span class="arrow right"></span></button>
+        <div class="content">
+              <P> Make Dine Book your go-to platform for all your food cravings and dining needs!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div>
+                    <p>About Us</p>
+                    <p>Privacy Policy</p>
+                    <p>Careers</p>
+                </div>
+                <div>
+                    <p>Contact Us</p>
+                    <p class="highlight">Store Locator</p>
+                    <p>Track Order</p>
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <img src="WhatsApp Image 2024-06-10 at 12.35.40 PM.jpeg.jpg" alt="Dine Book Logo" class="logo">
+                <div class="social-media">
+                    <img src="project pictures/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="YouTube">
+                    <img src="project pictures/images (1).jpeg" alt="Instagram">
+                    <img src="project pictures/images (2).jpeg" alt="Facebook">
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dine Book. All rights reserved</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

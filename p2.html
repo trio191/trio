@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <button onclick="goBack()">&larr;</button>
+        </div>
+        <h1>Track Order</h1>
+        <form id="trackOrderForm">
+            <div class="input-group">
+                <label for="phone">Phone Number (3XXXXXXXXXX) <span>*</span></label>
+                <input type="text" id="phone" name="phone" placeholder="+92" required>
+            </div>
+            <div class="input-group">
+                <label for="orderId">Order ID <span>*</span></label>
+                <input type="text" id="orderId" name="orderId" required>
+            </div>
+            <button type="submit">TRACK</button>
+        </form>
+    </div>
+    <script src="p2.js"></script>
+</body>
+</html>
